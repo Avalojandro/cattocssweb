@@ -26,7 +26,7 @@
         </div>
         <div>
           <div class="relative">
-            <img src="/avalojandro.png" class="z-20 testing relative rounded-full p-2 bg-white w-3/4 md:w-2/4" alt="">
+            <img src="/avalojandro.png" class="z-20 testing block ml-auto mr-auto  rounded-full p-2 bg-white w-3/4 md:w-2/4" alt="">
             <div class="absolute hidden md:block w-20 xl:w-36 h-20 xl:h-36 bg-blue-700 z-30 rounded blue-sqr">
                        &nbsp;
             </div>
