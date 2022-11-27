@@ -70,7 +70,7 @@ export default {
 }
 
 :target{
-  @apply text-primary-catto;
+   color: rgb(255 72 0 / var(--tw-text-opacity));
 }
 
 </style>
