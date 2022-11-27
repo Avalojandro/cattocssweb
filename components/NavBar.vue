@@ -13,9 +13,9 @@
         <div class="flex-col w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row">
           <div class="flex items-start justify-center w-full space-x-6 text-center lg:space-x-8 md:w-2/3 md:mt-0 md:flex-row md:items-center" />
           <div class="flex items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0">
-            <NuxtLink to="/avalojandro">
-              <a href="#" class="w-full px-6 py-2 mr-0 md:px-0 lg:pl-2 md:mr-4 lg:mr-5 md:w-auto text-white hover:text-primary-catto transition ease-out">Avalojandro?</a>
-            </NuxtLink>
+             <NuxtLink class="w-full px-6 py-2 mr-0 md:px-0 lg:pl-2 md:mr-4 lg:mr-5 md:w-auto text-white hover:text-primary-catto transition ease-out" to="/avalojandro">
+              Avalojandro?
+            </NuxtLink> 
             <a href="https://ko-fi.com/avalojandro" target="_blank" class="h-shake">
               <img class="w-40 rounded-3xl" src="/coffee.png" alt="">
             </a>
@@ -24,11 +24,11 @@
       </div>
 
       <div class="items-center md:hidden align-middle right-0 ">
-        <NuxtLink to="/avalojandro">
+        <router-link to="/avalojandro">
           <a href="https://ko-fi.com/avalojandro" target="_blank" class="align-middle mx-2">
             <img class="w-9 inline rounded-full " src="/emoji.png" alt="">
           </a>
-        </NuxtLink>
+        </router-link>
         <a href="https://ko-fi.com/avalojandro" target="_blank" class="h-shake align-middle">
           <img class="w-10 inline " src="/kofiPhone.png" alt="">
         </a>
