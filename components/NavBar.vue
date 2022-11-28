@@ -25,10 +25,11 @@
 
       <div class="items-center md:hidden align-middle right-0 ">
         <router-link to="/avalojandro">
-          <a href="https://ko-fi.com/avalojandro" target="_blank" class="align-middle mx-2">
+          <a href="https://ko-fi.com/avalojandro" target="_blank" class="align-middle">
             <img class="w-9 inline rounded-full " src="/emoji.png" alt="">
           </a>
         </router-link>
+        &nbsp;
         <a href="https://ko-fi.com/avalojandro" target="_blank" class="h-shake align-middle">
           <img class="w-10 inline " src="/kofiPhone.png" alt="">
         </a>
