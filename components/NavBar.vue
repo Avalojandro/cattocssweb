@@ -4,7 +4,7 @@
       <div class="flex items-center justify-start w-1/4 h-full pr-4">
         <a class="inline-block py-4 md:py-0">
           <NuxtLink to="/">
-            <img src="/catto3.png" class="hidden md:inline w-12 md:w-10 align-middle" alt="">
+            <img src="/catto3.png" class="hidden md:inline w-12 md:w-10 align-middle" alt="cattocss">
             <span class=" md:inline align-middle p-1 text-2xl font-black leading-none text-gray-900"><span class="text-white">catto</span><span class="text-primary-catto">css</span></span>
           </NuxtLink>
         </a>
