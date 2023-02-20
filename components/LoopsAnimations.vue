@@ -2,8 +2,11 @@
   <div class="a-jello">
     <div class="text-white grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 pb-32">
       <div v-for="animation of animations" :key="animation" class="p-10 text-center items-center">
+        
+      </div>
+      <div v-for="animation of animations" :key="animation" class="p-10 text-center items-center">
         <div :class="getAnimation(animation.class)" @click="sendData(animation.name, animation.code)">
-          <span>loop test</span>
+          <span>Coming Soon</span>
         </div>
       </div>
       <br>
@@ -18,7 +21,7 @@ export default {
     return {
       animations: [
         {
-          name: 'i-shake', onDiv: false, id: 0, class: 'i-shakeX', code: `
+          name: 'i-shake', onDiv: false, id: 0, class: 'i-shake', code: `
 .i-shake{
         animation-name: shake;
         -webkit-animation-name: shake;
