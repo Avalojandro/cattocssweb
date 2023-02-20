@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
     app: {
       head: {
+        htmlAttrs: {
+          lang: 'en'
+        },
         charset: 'utf-8',
         title: 'cattocss',
         meta: [
