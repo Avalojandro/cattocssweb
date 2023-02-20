@@ -7,8 +7,8 @@
           <a v-for="(type, index) in types" :key="type" :class="selectedItemStyle(index)" @click="itemIndex(index)">{{ type }}</a>
         </nav>
         <HoverAnimations v-if="selectedItem === 0" @getAnimationName="listDataName" @getAnimationCode="listDataCode" />
+                <LoopsAnimations v-if="selectedItem === 1" @getAnimationName="listDataName" @getAnimationCode="listDataCode" />
         <!-- <OneTimeAnimations v-if="selectedItem === 1" @getAnimationName="listDataName" @getAnimationCode="listDataCode" />
-        <LoopsAnimations v-if="selectedItem === 2" @getAnimationName="listDataName" @getAnimationCode="listDataCode" />
         <AnimatedButtons v-if="selectedItem === 3" @getAnimationName="listDataName" @getAnimationCode="listDataCode" /> -->
       </div>
 
@@ -27,7 +27,7 @@ export default {
       animationName: null,
       selectedItem: 0,
       animationCode: null,
-      types: ['Hover']
+      types: ['Hover', 'Loops']
     }
   },
   methods: {

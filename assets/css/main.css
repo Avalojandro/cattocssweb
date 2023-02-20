@@ -529,9 +529,16 @@
 
 /*Shake*/
 .i-shakeX{
-    animation-name: bounce-shakeX .5s alternate infinite ease-in;
-        -webkit-animation-name: bounce-shakeX .5s alternate infinite ease-in;
-        -moz-animation-name: bounce-shakeX .5s alternate infinite ease-in;
+        animation-name: bounce-shakeX ease-in;
+        -webkit-animation-name: bounce-shakeX ease-in;
+        -moz-animation-name: bounce-shakeX ease-in;
+    animation-duration: 0.5s;
+        -webkit-animation-duration: 0.5s;
+        -moz-animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;     
+    
 }
 .i-shakeY{
     animation-name: bounce-shakeY .5s alternate infinite ease-in;
@@ -603,18 +610,6 @@ animation-iteration-count: infinite;
         -moz-animation-iteration-count: infinite;
 }
 
-/*Hinge*/
-.i-hinge {
-    animation-duration: 2s;
-        -webkit-animation-duration: 2s;
-        -moz-animation-duration: 2s;
-    animation-iteration-count: infinite;
-        -webkit-animation-iteration-count: infinite;
-        -moz-animation-iteration-count: infinite;
-    animation-name: hinge;
-        -webkit-animation-name: hinge;
-        -moz-animation-name: hinge;
-  }
   
 /*SCROLL ANIMATIONS*/  
     /*The scroll animations must be activated with Waypoints*/
@@ -1071,16 +1066,16 @@ animation-iteration-count: infinite;
     }
 
     @keyframes bounce-shakeX{
-        0% {transform: translateX(-50%);}
-        12% {transform: translateX(50%);}
-        24% {transform: translateX(-20%);}
-        36% {transform: translateX(20%);}
-        48% {transform: translateX(-10%);}
-        60% {transform: translateX(10%);}
-        72% {transform: translateX(-5%);}
-        84% {transform: translateX(5%);}
-        96% {transform: translateX(0%);}
-        100% {transform: translateX(0%);}
+        0% {transform: translate(-50%,0px);}
+        12% {transform: translate(50%,0px);}
+        24% {transform: translate(-20%,0px);}
+        36% {transform: translate(20%,0px);}
+        48% {transform: translate(-10%,0px);}
+        60% {transform: translate(10%,0px);}
+        72% {transform: translate(-5%,0px);}
+        84% {transform: translate(5%,0px);}
+        96% {transform: translate(0%,0px);}
+        100% {transform: translate(0%,0px);}
     }
 
     @keyframes bounce-shakeY{
