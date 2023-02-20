@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
     app: {
       head: {
-        charset: 'utf-16',
+        charset: 'utf-8',
         title: 'cattocss',
         meta: [
           { name: 'description', content: 'cattocss is a CSS animations library online where you can use the source code without installing dependencies in your web project.' },
