@@ -2,11 +2,8 @@
   <div class="a-jello">
     <div class="text-white grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4 pb-32">
       <div v-for="animation of animations" :key="animation" class="p-10 text-center items-center">
-        
-      </div>
-      <div v-for="animation of animations" :key="animation" class="p-10 text-center items-center">
         <div :class="getAnimation(animation.class)" @click="sendData(animation.name, animation.code)">
-          <span>Coming Soon</span>
+          <span>{{animation.name}}</span>
         </div>
       </div>
       <br>
@@ -47,7 +44,112 @@ export default {
         90% {transform: translate(1px, 2px) rotate(0deg);}
         100% {transform: translate(1px, -2px) rotate(-1deg);}
     }`
-        }
+        },
+        {
+          name: 'i-pulse', onDiv: false, id: 0, class: 'i-pulse', code: `
+.i-pulse {
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes pulse {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.2);}
+    100% {transform: scale(1);}
+  }`
+        },
+        {
+          name: 'i-bounce', onDiv: false, id: 0, class: 'i-bounce', code: `
+.i-bounce {
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes bounce {
+      0% {transform: translateY(0);}
+      50% {transform: translateY(-10px);}
+      100% {transform: translateY(0);}
+  }`
+        },
+        {
+          name: 'i-heartbeat', onDiv: false, id: 0, class: 'i-heartbeat', code: `
+.i-heartbeat {
+    animation-name: heartbeat;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes heartbeat {
+    0% {transform: scale(1);}
+    25% {transform: scale(1.3);}
+    50% {transform: scale(1);}
+    75% {transform: scale(0.7);}
+    100% {transform: scale(1);}
+  }`
+        },
+        {
+          name: 'i-slide', onDiv: false, id: 0, class: 'i-slide', code: `
+.i-slide {
+    animation-name: slide;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes slide {
+    0% {transform: translateX(0);}
+    50% {transform: translateX(20px);}
+    100% {transform: translateX(0);}
+  }`
+        },
+        {
+          name: 'i-flicker', onDiv: false, id: 0, class: 'i-flicker', code: `
+.i-flicker {
+    animation-name: flicker;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes flicker {
+    0% {opacity: 1;}
+    25% {opacity: 0.5;}
+    50% {opacity: 1;}
+    75% {opacity: 0.5;}
+    100% {opacity: 1;}
+  }`
+        },
+        {
+          name: 'i-rotate', onDiv: false, id: 0, class: 'i-rotate', code: `
+.i-rotate {
+    animation-name: rotate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+  }`
+        },
+        {
+          name: 'i-wobble', onDiv: false, id: 0, class: 'i-wobble', code: `
+.i-wobble {
+    animation-name: wobble;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes wobble {
+    0% {transform: translateX(0) rotate(0deg);}
+    15% {transform: translateX(-30px) rotate(-5deg);}
+    30% {transform: translateX(15px) rotate(3deg);}
+    45% {transform: translateX(-15px) rotate(-3deg);}
+    60% {transform: translateX(9px) rotate(2deg);}
+    75% {transform: translateX(-6px) rotate(-1deg);}
+    100% {transform: translateX(0) rotate(0deg);}
+  }`
+        },                                        
       ]
     }
   },
