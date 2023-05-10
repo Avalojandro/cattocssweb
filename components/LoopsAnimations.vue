@@ -18,8 +18,8 @@ export default {
     return {
       animations: [
         {
-          name: 'i-shake', onDiv: false, id: 0, class: 'i-shake', code: `
-.i-shake{
+          name: 'shake', onDiv: false, id: 0, class: 'i-shake', code: `
+.shake{
         animation-name: shake;
         -webkit-animation-name: shake;
         -moz-animation-name: shake;
@@ -46,8 +46,8 @@ export default {
     }`
         },
         {
-          name: 'i-pulse', onDiv: false, id: 0, class: 'i-pulse', code: `
-.i-pulse {
+          name: 'pulse', onDiv: false, id: 0, class: 'i-pulse', code: `
+.pulse {
     animation-name: pulse;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -60,8 +60,8 @@ export default {
   }`
         },
         {
-          name: 'i-bounce', onDiv: false, id: 0, class: 'i-bounce', code: `
-.i-bounce {
+          name: 'bounce', onDiv: false, id: 0, class: 'i-bounce', code: `
+.bounce {
     animation-name: bounce;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -74,8 +74,8 @@ export default {
   }`
         },
         {
-          name: 'i-heartbeat', onDiv: false, id: 0, class: 'i-heartbeat', code: `
-.i-heartbeat {
+          name: 'heartbeat', onDiv: false, id: 0, class: 'i-heartbeat', code: `
+.heartbeat {
     animation-name: heartbeat;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -90,8 +90,8 @@ export default {
   }`
         },
         {
-          name: 'i-slide', onDiv: false, id: 0, class: 'i-slide', code: `
-.i-slide {
+          name: 'slide', onDiv: false, id: 0, class: 'i-slide', code: `
+.slide {
     animation-name: slide;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -104,8 +104,8 @@ export default {
   }`
         },
         {
-          name: 'i-flicker', onDiv: false, id: 0, class: 'i-flicker', code: `
-.i-flicker {
+          name: 'flicker', onDiv: false, id: 0, class: 'i-flicker', code: `
+.flicker {
     animation-name: flicker;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -120,8 +120,8 @@ export default {
   }`
         },
         {
-          name: 'i-rotate', onDiv: false, id: 0, class: 'i-rotate', code: `
-.i-rotate {
+          name: 'rotate', onDiv: false, id: 0, class: 'i-rotate', code: `
+.rotate {
     animation-name: rotate;
     animation-duration: 1s;
     animation-iteration-count: infinite;
@@ -133,8 +133,8 @@ export default {
   }`
         },
         {
-          name: 'i-wobble', onDiv: false, id: 0, class: 'i-wobble', code: `
-.i-wobble {
+          name: 'wobble', onDiv: false, id: 0, class: 'i-wobble', code: `
+.wobble {
     animation-name: wobble;
     animation-duration: 1s;
     animation-iteration-count: infinite;
