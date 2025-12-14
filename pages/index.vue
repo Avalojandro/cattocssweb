@@ -1,15 +1,6 @@
 <template>
   <div class="min-h-screen pt-8 pb-20">
     <div class="container mx-auto px-4">
-      <!-- Page Header -->
-      <div class="text-center mb-12 fade-in">
-        <h1 class="text-5xl md:text-6xl font-bold mb-4">
-          <span class="text-white">CSS </span>
-          <span class="gradient-text">Animations</span>
-        </h1>
-        <p class="text-gray-400 text-lg">Choose an animation to see the code</p>
-      </div>
-
       <!-- Main Grid Layout -->
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 xl:gap-12">
         <!-- Left Side: Animation Categories and Demos -->
