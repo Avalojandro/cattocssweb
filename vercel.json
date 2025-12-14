@@ -1,8 +1,1 @@
-{
-  "buildCommand": "npm run build",
-  "functions": {
-    "__nitro": {
-      "runtime": "nodejs20.x"
-    }
-  }
-}
+{}
