@@ -2,7 +2,7 @@
   "buildCommand": "npm run build",
   "functions": {
     "__nitro": {
-      "runtime": "nodejs24.x"
+      "runtime": "nodejs22.x"
     }
   }
 }
