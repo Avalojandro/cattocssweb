@@ -1,9 +1,9 @@
 <template>
-  <div class="bg-gray-900">
-        <NavBar />
-    <NuxtPage/>
-        <div class=" ">
-      <Footer />
-    </div>
+  <div
+    class="min-h-screen bg-gradient-to-br from-dark-900 via-dark-800 to-dark-900"
+  >
+    <NavBar />
+    <NuxtPage />
+    <Footer />
   </div>
 </template>

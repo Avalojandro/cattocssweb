@@ -1,113 +1,191 @@
 <template>
-  <div class="test">
-    <div class="max-w-7xl px-8 xl:px-0 max mx-auto">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 py-12 lg:py-64 items-center">
-        <div class="text-center lg:text-left">
-          <h1 class="text-primary-catto font-bold text-4xl">
-            I'm
-          </h1>
-          <h1 class="text-white font-bold text-5xl  md:text-7xl">
-            Avalojandro
-          </h1>
-          <h1 class="text-gray-500 text-2xl pt-4 lg:px-0 leading-8">
-            Front-End Developer, gamer, drummer and creator of cattocss based in LATAM.
-          </h1>
-          <div class="pt-3 space-x-2">
-            <a class="inline" href="https://github.com/Avalojandro" target="_blank">
-              <img src="/git.png" class="inline w-7 h-grow">
-            </a>
-            <a href="www.linkedin.com/in/avalojandro" target="_blank" class="inline">
-              <img src="/linkedin.png" class="inline w-6 h-grow">
-            </a>
-            <a href="https://www.youtube.com/channel/UCPJ3pqEWlujjmQ28GUD-7kQ" target="_blank" class="inline">
-              <img src="/yt.png" class="inline w-8 h-grow">
-            </a>
+  <section
+    class="relative min-h-screen flex items-center justify-center py-20 px-6 overflow-hidden"
+  >
+    <!-- Animated Background Elements -->
+    <div class="absolute inset-0 overflow-hidden pointer-events-none">
+      <div
+        class="absolute top-1/4 right-10 w-64 h-64 bg-secondary-purple/20 rounded-full blur-3xl animate-pulse-slow"
+      ></div>
+      <div
+        class="absolute bottom-1/4 left-10 w-80 h-80 bg-primary-catto/20 rounded-full blur-3xl animate-pulse-slow"
+        style="animation-delay: 1.5s"
+      ></div>
+    </div>
+
+    <div class="relative max-w-7xl mx-auto z-10">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center"
+      >
+        <!-- Left Side: Profile Image with Animated Shapes -->
+        <div class="order-2 lg:order-1">
+          <div class="relative max-w-md mx-auto">
+            <!-- Profile Image -->
+            <div class="relative z-20 flex justify-center">
+              <div class="glass-card p-3 rounded-full">
+                <img
+                  src="/avalojandro.jpg"
+                  class="rounded-full w-64 h-64 md:w-80 md:h-80 object-cover shadow-2xl"
+                  alt="Avalojandro"
+                />
+              </div>
+            </div>
+
+            <!-- Animated Geometric Shapes -->
+            <!-- Blue Square - Top Left -->
+            <div
+              class="absolute w-24 h-24 lg:w-32 lg:h-32 bg-secondary-blue rounded-lg blue-sqr shadow-glow-purple"
+              style="top: -2rem; left: 12rem"
+            ></div>
+            <!-- Red Triangle - Middle Left -->
+            <div
+              class="absolute triangle red-triangle"
+              style="top: 90%; left: 20rem; transform: translateY(-50%)"
+            ></div>
+            <!-- Green Rectangle - Bottom Left -->
+            <div
+              class="absolute w-16 h-48 lg:w-20 lg:h-64 bg-accent-green rounded-lg green-sqr shadow-glow"
+              style="bottom: -2rem; left: -1rem"
+            ></div>
           </div>
         </div>
-        <div>
-          <div class="relative">
-            <img src="/avalojandro.jpg" class="z-20 testing block ml-auto mr-auto  rounded-full p-2 bg-white w-3/4 md:w-2/4" alt="cattocss">
-            <div class="absolute hidden md:block w-20 xl:w-36 h-20 xl:h-36 bg-blue-700 z-30 rounded blue-sqr">
-                       &nbsp;
-            </div>
-            <div class="absolute hidden md:block triangle rounded z-0 transform left-0 top-0 red-triangle">
-                       &nbsp;
-            </div>
-            <div class="absolute hidden md:block w-12 xl:w-24 h-36 xl:h-72 bg-green-500 right-0 top-0 z-0 rounded green-sqr">
-                       &nbsp;
-            </div>
+
+        <!-- Right Side: Text Content -->
+        <div
+          class="order-1 lg:order-2 text-center lg:text-left space-y-6 fade-in"
+        >
+          <div>
+            <h2 class="text-primary-catto font-bold text-3xl md:text-4xl mb-2">
+              I'm
+            </h2>
+            <h1
+              class="gradient-text font-black text-5xl md:text-6xl lg:text-7xl mb-6"
+            >
+              Avalojandro
+            </h1>
+          </div>
+
+          <p
+            class="text-gray-300 text-xl md:text-2xl leading-relaxed max-w-xl mx-auto lg:mx-0"
+          >
+            Front-End Developer, gamer, drummer and creator of
+            <span class="gradient-text font-bold">cattocss</span>
+            based in LATAM.
+          </p>
+
+          <!-- Social Media Links -->
+          <div class="flex justify-center lg:justify-start space-x-4 pt-4">
+            <a
+              href="https://github.com/Avalojandro"
+              target="_blank"
+              class="glass-card p-3 rounded-lg hover-lift hover:shadow-glow transition-all duration-300"
+            >
+              <img src="/git.png" class="w-8 h-8" alt="GitHub" />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/avalojandro"
+              target="_blank"
+              class="glass-card p-3 rounded-lg hover-lift hover:shadow-glow transition-all duration-300"
+            >
+              <img src="/linkedin.png" class="w-8 h-8" alt="LinkedIn" />
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCPJ3pqEWlujjmQ28GUD-7kQ"
+              target="_blank"
+              class="glass-card p-3 rounded-lg hover-lift hover:shadow-glow transition-all duration-300"
+            >
+              <img src="/yt.png" class="w-8 h-8" alt="YouTube" />
+            </a>
+          </div>
+
+          <!-- Additional Info Card -->
+          <div class="glass-card p-6 rounded-2xl max-w-xl mx-auto lg:mx-0 mt-8">
+            <h3 class="text-white font-bold text-lg mb-3">About cattocss</h3>
+            <p class="text-gray-400 leading-relaxed">
+              A free, open-source CSS animation library designed to make your
+              web projects more dynamic and engaging. No dependencies, just pure
+              CSS magic! 🐱✨
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
 
-<style>
-
-
-.test{
-  height: 100vh;
-  display: flex;
-}
-
+<style scoped>
 .triangle {
   width: 0;
   height: 0;
-  border-top: 80px solid transparent;
-  border-bottom: 80px solid transparent;
-
-  border-left: 80px solid rgb(218, 8, 8);
+  border-top: 60px solid transparent;
+  border-bottom: 60px solid transparent;
+  border-left: 60px solid #ff4800;
+  border-radius: 8px;
 }
 
-.backgrounds{
-  border-radius: 10px;
+.blue-sqr {
+  animation: animation 50s ease-in-out infinite;
 }
 
-.trans{
-  transform: translateY(-24rem);
+.green-sqr {
+  animation: animation2 27s ease-in-out infinite;
 }
 
-.blue-sqr{
-  animation-name: animation;
-  animation-duration: 50s;
-  animation-iteration-count: infinite;
-}
-
-.green-sqr{
-  animation-name: animation2;
-  animation-duration: 27s;
-  animation-iteration-count: infinite;
-}
-
-.red-triangle{
-  animation-name: animation3;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+.red-triangle {
+  animation: animation3 10s ease-in-out infinite;
 }
 
 @keyframes animation {
-        0% {transform: rotate3d(0, 0, 1, 15deg) translateX(6rem) translateY(-6rem);}
-        25%{transform: rotate3d(0, 0, 1, -10deg) translateX(7rem) translateY(-6rem);}
-        50% {transform: rotate3d(0, 0, 1, 5deg) translateX(8rem) translateY(-6rem);}
-        75%{transform: rotate3d(0, 0, 1, -5deg) translateX(7rem) translateY(-6rem);}
-        100% {transform: rotate3d(0, 0, 1, 15deg) translateX(6rem) translateY(-6rem);}
+  0% {
+    transform: rotate3d(0, 0, 1, 15deg) translateX(6rem) translateY(-6rem);
+  }
+  25% {
+    transform: rotate3d(0, 0, 1, -10deg) translateX(7rem) translateY(-6rem);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, 5deg) translateX(8rem) translateY(-6rem);
+  }
+  75% {
+    transform: rotate3d(0, 0, 1, -5deg) translateX(7rem) translateY(-6rem);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 15deg) translateX(6rem) translateY(-6rem);
+  }
 }
 
 @keyframes animation2 {
-        0%{transform: rotate3d(0, 0, 10, -10deg) translateX(-6rem) }
-        25%{transform: rotate3d(0, 0, 1, 5deg) translateX(-6rem) }
-        50%{transform: rotate3d(0, 0, 1, 0deg) translateX(-6rem) }
-        75%{transform: rotate3d(0, 0, 1, 5deg) translateX(-6rem) }
-        100%{transform: rotate3d(0, 0, 10, -10deg) translateX(-6rem) }
+  0% {
+    transform: rotate3d(0, 0, 10, -10deg) translateX(-6rem);
+  }
+  25% {
+    transform: rotate3d(0, 0, 1, 5deg) translateX(-6rem);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, 0deg) translateX(-6rem);
+  }
+  75% {
+    transform: rotate3d(0, 0, 1, 5deg) translateX(-6rem);
+  }
+  100% {
+    transform: rotate3d(0, 0, 10, -10deg) translateX(-6rem);
+  }
 }
 
 @keyframes animation3 {
-        0%{transform: rotate3d(0, 0, 10, -10deg) translateX(8rem) }
-        25%{transform: rotate3d(0, 0, 1, 5deg) translateX(8rem) }
-        50%{transform: rotate3d(0, 0, 1, 0deg) translateX(8rem) }
-        75%{transform: rotate3d(0, 0, 1, 5deg) translateX(8rem) }
-        100%{transform: rotate3d(0, 0, 10, -10deg) translateX(8rem) }
+  0% {
+    transform: rotate3d(0, 0, 10, -10deg) translateX(8rem);
+  }
+  25% {
+    transform: rotate3d(0, 0, 1, 5deg) translateX(8rem);
+  }
+  50% {
+    transform: rotate3d(0, 0, 1, 0deg) translateX(8rem);
+  }
+  75% {
+    transform: rotate3d(0, 0, 1, 5deg) translateX(8rem);
+  }
+  100% {
+    transform: rotate3d(0, 0, 10, -10deg) translateX(8rem);
+  }
 }
-
 </style>
