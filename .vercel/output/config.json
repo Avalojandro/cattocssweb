@@ -1,6 +1,16 @@
 {
   "version": 3,
-  "overrides": {},
+  "overrides": {
+    "index.html": {
+      "path": ""
+    },
+    "animations/index.html": {
+      "path": "animations"
+    },
+    "avalojandro/index.html": {
+      "path": "avalojandro"
+    }
+  },
   "routes": [
     {
       "headers": {
@@ -43,14 +53,6 @@
     },
     {
       "handle": "filesystem"
-    },
-    {
-      "src": "(?<url>/__nuxt_error)",
-      "dest": "/__fallback"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/__fallback"
     }
   ]
 }
